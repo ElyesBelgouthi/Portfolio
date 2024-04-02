@@ -334,3 +334,189 @@ section {
     margin-bottom: 20px;
   }
 }
+
+/*
+  ABOUT SECTION
+*/
+
+#about-section {
+  display: flex;
+  height: calc(100vh - 70px);
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0;
+}
+
+.about--content {
+  max-width: 800px;
+  width: 60vw;
+  padding: 0 20px;
+  text-align: left;
+}
+
+.about--content h1 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #a7dbd8;
+  --b: 8px; /* border thickness  */
+  --g: repeating-linear-gradient(
+    45deg,
+    #2f0c97 0 10px,
+    #0a7c8d 0 20px,
+    #ffffff 0 30px
+  );
+  border-image: var(--g) fill 0 / calc(100% - var(--b)) 0 0/0 36vw 0 0 repeat;
+  padding-block: 10px;
+  margin-bottom: 20px;
+  max-width: 200px;
+}
+
+.about--content h2 {
+  color: #a7dbd8;
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.about--content p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.about--image {
+  flex-shrink: 0;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+}
+
+.about--image img {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  object-fit: contain;
+  --c: #2f0c97;
+  --s: 9px;
+
+  outline: var(--s) solid var(--c);
+  --_c: conic-gradient(var(--c) 0 0);
+}
+
+.quote--icon {
+  color: #a7dbd8;
+  font-size: 50px;
+  margin: 0 20px;
+}
+
+b {
+  font-weight: 700;
+  color: #a7dbd8;
+  font-size: 1.3rem;
+}
+
+@media screen and (max-width: 850px) {
+  #about-section {
+    display: block;
+    height: calc(100vh - 70px);
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+    width: 100%;
+  }
+
+  .about--content {
+    max-width: 800px;
+    text-align: left;
+    width: 100%;
+  }
+
+  .about--content h1 {
+    font-size: 2rem;
+    font-weight: 800;
+    color: #a7dbd8;
+    --b: 8px; /* border thickness  */
+    --g: repeating-linear-gradient(
+      45deg,
+      #2f0c97 0 10px,
+      #0a7c8d 0 20px,
+      #ffffff 0 30px
+    );
+    border-image: var(--g) fill 0 / calc(100% - var(--b)) 0 0/0 36vw 0 0 repeat;
+    padding-block: 10px;
+    margin-bottom: 20px;
+    max-width: 200px;
+  }
+
+  .about--content h2 {
+    color: #a7dbd8;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+
+  .about--content p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+
+  .about--image {
+    display: none;
+  }
+
+  .quote--icon {
+    color: #a7dbd8;
+    font-size: 35px;
+    margin: 0 20px;
+  }
+
+  b {
+    font-weight: 700;
+    color: #a7dbd8;
+    font-size: 1rem;
+  }
+}
+
+/*
+  EXPERTISE SECTION
+*/
+
+#expertise-section {
+  margin: 50px auto;
+  max-width: 800px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.skill-category {
+  margin-bottom: 30px;
+}
+
+.skill-category h3 {
+  font-size: 1.5rem;
+  color: #007bff;
+}
+
+.skill-category ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.skill-category ul li {
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+.skill-category ul li:before {
+  content: "•";
+  color: #007bff;
+  margin-right: 5px;
+}
+
+.skill-category ul li:last-child {
+  margin-bottom: 0;
+}

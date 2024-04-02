@@ -28,7 +28,7 @@ const Header = () => {
         <nav className="header--nav">
           <ul>
             <li>
-              <a>Home</a>
+              <a href="#home-section">Home</a>
             </li>
             <li>
               <a>About</a>

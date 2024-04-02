@@ -1,10 +1,11 @@
 import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
+
 import "./App.css";
 import Header from "./components/Header";
 import Layout from "./components/Layout";
 import HomeSection from "./components/Home";
+import AboutSection from "./components/About";
+import ExpertiseSection from "./components/Expertise";
 
 function App() {
   return (
@@ -12,6 +13,8 @@ function App() {
       <Header />
       <Layout></Layout>
       <HomeSection />
+      <AboutSection />
+      <ExpertiseSection />
     </>
   );
 }
