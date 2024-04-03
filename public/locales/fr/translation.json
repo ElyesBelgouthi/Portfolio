@@ -1,0 +1,26 @@
+{
+  "homeSection": {
+    "h4": "Salut! Je suis",
+    "h2": "Étudiant en Génie Logiciel & Développeur FullStack",
+    "resume": "Mon CV",
+    "scrollDown": "Défiler vers le bas"
+  },
+
+  "aboutSection": {
+    "title": "Concernant Moi",
+    "1": "Bonjour ! Je suis ",
+    "2": ", un étudiant en troisième année de génie logiciel ",
+    "3": " à ",
+    "4": " à Tunis, en Tunisie. Je suis passionné par la technologie et avide d'opportunités telles que des ",
+    "5": "stages",
+    "6": "et des postes à ",
+    "7": "temps partiel",
+    "8": " pour mettre en pratique mes compétences et contribuer à des projets enrichissants.",
+    "9": "Ce site web a été conçu en utilisant des technologies de pointe, notamment",
+    "10": " pour le frontend, ",
+    "11": " pour les animations,",
+    "12": " pour des effets de particules dynamiques, et ",
+    "13": " pour le support de l'internationalisation.",
+    "14": "Soyons en contact et explorons comment nous pouvons innover ensemble !"
+  }
+}

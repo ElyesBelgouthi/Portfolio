@@ -205,17 +205,6 @@ const ExpertiseSection = () => {
             </li>
           </ul>
         </div>
-        <div className="expertise-category">
-          <h3>Operating Systems</h3>
-          <ul>
-            <li>
-              <img
-                src="https://cdn-icons-png.flaticon.com/512/518/518713.png"
-                alt="Linux"
-              />
-            </li>
-          </ul>
-        </div>
       </div>
     </section>
   );

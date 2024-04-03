@@ -1,0 +1,25 @@
+{
+  "homeSection": {
+    "h4": "Hi! I am",
+    "h2": "Software Engineering Student & FullStack Developer",
+    "resume": "My Resume",
+    "scrollDown": "Scroll down"
+  },
+  "aboutSection": {
+    "title": "About Me",
+    "1": "Hello! I'm ",
+    "2": ", a third-year software engineering student ",
+    "3": " at ",
+    "4": " in Tunis, Tunisia. I'm passionate about technology and eager for opportunities like ",
+    "5": "internships",
+    "6": "and ",
+    "7": "part-time",
+    "8": " positions to apply my skills and contribute to meaningful projects.",
+    "9": "This website was crafted using cutting-edge technologies including",
+    "10": " for the frontend, ",
+    "11": " for animations,",
+    "12": " for dynamic particle effects, and ",
+    "13": " for internationalization support.",
+    "14": "Let's connect and explore how we can innovate together!"
+  }
+}

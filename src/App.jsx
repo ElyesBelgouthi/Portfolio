@@ -6,6 +6,7 @@ import Layout from "./components/Layout";
 import HomeSection from "./components/Home";
 import AboutSection from "./components/About";
 import ExpertiseSection from "./components/Expertise";
+import CareerSection from "./components/Career";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <HomeSection />
       <AboutSection />
       <ExpertiseSection />
+      <CareerSection />
     </>
   );
 }
