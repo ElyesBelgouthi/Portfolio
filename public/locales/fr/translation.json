@@ -39,5 +39,38 @@
     "4": "APIs & Bases de données",
     "5": "Contrôle de version",
     "6": "Analyse de données & Visualisation"
+  },
+  "educationSection": {
+    "title": "Formation",
+    "1": "Juin 2021",
+    "2": "Lycée Pilote de l'Ariana | Ariana, Tunisie",
+    "3": "Baccalauréat Tunisien en Sciences Techniques",
+    "4": "Réalisations :",
+    "5": "Mention :",
+    "6": " (Classé ",
+    "66": "8ème",
+    "666": " à l'Examen National)",
+    "7": "Prévu en juin 2026",
+    "8": "Institut National des Sciences Appliquées et de Technologie (INSAT) | Tunis, Tunisie",
+    "9": "Bachelor en Génie Logiciel",
+    "10": "Réalisations :",
+    "11": "Deuxième année : Classé 8ème sur 85 étudiants",
+    "12": "Première année : Atteint une remarquable 6ème place sur 450."
+  },
+  "professionalSection": {
+    "title": "Expérience Professionnelle",
+    "1": "Juillet 2022 - Août 2022",
+    "2": "Tunisie Autoroutes | Tunis, Tunisie",
+    "3": "Technicien Informatique Saisonnier",
+    "4": "Résolution des problèmes réseau à l'aide d'outils tels que Putty, assurant la connectivité.",
+    "5": "Fourniture de support technique aux utilisateurs finaux, répondant à leurs questions liées à l'informatique.",
+    "6": "Résolution des erreurs liées au système de paiement des péages autoroutiers à l'aide de MS SQL.",
+    "7": "Juillet 2023 - Août 2023",
+    "8": "Horizon Data | Tunis, Tunisie",
+    "9": "Stagiaire / Développeur Full-Stack",
+    "10": "Développement d'un système ERP pour un Système de Gestion de l'Apprentissage (LMS).",
+    "11": "Utilisation d'Angular pour créer une interface conviviale et réactive.",
+    "12": "Implémentation du back-end en utilisant NestJS pour assurer le développement d'API et la gestion des données.",
+    "13": "Conception et maintenance de la base de données en utilisant PostgreSQL."
   }
 }
