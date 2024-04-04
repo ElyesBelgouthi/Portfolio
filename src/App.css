@@ -653,10 +653,14 @@ b {
 
 #career-section {
   display: block;
-  min-height: calc(100vh - 70px);
-  padding: 50px 90px;
+  padding: 50px 10px;
   width: 100%;
   margin-bottom: 80px;
+}
+
+.career-subsection {
+  min-height: calc(100vh - 70px);
+  width: 100%;
 }
 
 .career-title {
@@ -678,31 +682,28 @@ b {
 }
 
 .career-container {
-  min-height: 100vh;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 100px 0;
+  padding: 20px 0;
 }
 .timeline {
   height: auto;
   margin: 0 auto;
   position: relative;
-  max-width: 1200px;
+  width: 80vw;
 }
 
-.timeline ul {
-  list-style: none;
-}
-.timeline ul li {
+.time-line-list-element {
   padding: 20px;
   background-color: #1e1f22;
   color: white;
   border-radius: 10px;
   margin-bottom: 20px;
+  width: 100%;
 }
-.timeline ul li:last-child {
+.time-line-list-element:last-child {
   margin-bottom: 0;
 }
 .timeline-content h1 {
@@ -715,15 +716,31 @@ b {
 
 .timeline-content h2 {
   font-weight: 400;
-  font-size: 13px;
-  line-height: 20px;
-  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.time-line-list-element:nth-child(odd) ul {
+  padding-left: 10%;
+  text-align: left;
+}
+
+.time-line-list-element:nth-child(even) ul {
+  padding-left: 20px;
+  padding-right: 0;
+}
+
+.timeline-content li {
+  list-style: disc;
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: 300;
 }
 
 .timeline-content p {
   font-size: 14px;
   line-height: 30px;
-  font-weight: 300;
+  font-weight: 500;
+  color: #a7dbd8;
 }
 
 .timeline-content .date {
@@ -732,6 +749,38 @@ b {
   margin-bottom: 10px;
   letter-spacing: 2px;
 }
+
+.timeline-list {
+  width: 100%;
+}
+
+.timeline-content b {
+  color: #a7dbd8;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+@media only screen and (max-width: 1080px) {
+  .career-title {
+    margin: 0 auto;
+    font-size: 2rem;
+    font-weight: 800;
+    color: #a7dbd8;
+    --b: 8px; /* border thickness  */
+    --g: repeating-linear-gradient(
+      45deg,
+      #2f0c97 0 10px,
+      #0a7c8d 0 20px,
+      #ffffff 0 30px
+    );
+    border-image: var(--g) fill 0 / calc(100% - var(--b)) 0 0/0 15vw 0 15vw
+      repeat;
+    padding-block: 20px;
+    margin-bottom: 30px;
+    max-width: 200px;
+  }
+}
+
 @media only screen and (min-width: 768px) {
   .timeline:before {
     content: "";
@@ -743,12 +792,12 @@ b {
     height: 100%;
     background-color: gray;
   }
-  .timeline ul li {
+  .time-line-list-element {
     width: 50%;
     position: relative;
     margin-bottom: 50px;
   }
-  .timeline ul li:nth-child(odd) {
+  .time-line-list-element:nth-child(odd) {
     float: left;
     clear: right;
     transform: translateX(-30px);
@@ -756,18 +805,18 @@ b {
     text-align: right;
   }
 
-  .timeline ul li:nth-child(odd) .date {
+  .time-line-list-element:nth-child(odd) .date {
     right: 20px;
   }
 
-  .timeline ul li:nth-child(even) {
+  .time-line-list-element:nth-child(even) {
     float: right;
     clear: left;
     transform: translateX(30px);
     border-radius: 0px 20px 20px 20px;
     text-align: left;
   }
-  .timeline ul li::before {
+  .time-line-list-element::before {
     content: "";
     position: absolute;
     height: 20px;
@@ -776,11 +825,11 @@ b {
     background-color: gray;
     top: 0px;
   }
-  .timeline ul li:nth-child(odd)::before {
+  .time-line-list-element:nth-child(odd)::before {
     transform: translate(50%, -50%);
     right: -30px;
   }
-  .timeline ul li:nth-child(even)::before {
+  .time-line-list-element:nth-child(even)::before {
     transform: translate(-50%, -50%);
     left: -30px;
   }
@@ -788,7 +837,7 @@ b {
     position: absolute;
     top: -30px;
   }
-  .timeline ul li:hover::before {
+  .time-line-list-element:hover::before {
     background-color: aqua;
   }
 }
