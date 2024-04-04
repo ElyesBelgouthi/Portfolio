@@ -1,4 +1,12 @@
 {
+  "header": {
+    "1": "Accueil",
+    "2": "À propos",
+    "3": "Compétences",
+    "4": "Expérience",
+    "5": "Projets",
+    "6": "Contact"
+  },
   "homeSection": {
     "h4": "Salut! Je suis",
     "h2": "Étudiant en Génie Logiciel & Développeur FullStack",
@@ -22,5 +30,14 @@
     "12": " pour des effets de particules dynamiques, et ",
     "13": " pour le support de l'internationalisation.",
     "14": "Soyons en contact et explorons comment nous pouvons innover ensemble !"
+  },
+  "expertiseSection": {
+    "title": "Compétences",
+    "1": "Langages de programmation",
+    "2": "Développement frontend",
+    "3": "Frameworks côté serveur",
+    "4": "APIs & Bases de données",
+    "5": "Contrôle de version",
+    "6": "Analyse de données & Visualisation"
   }
 }

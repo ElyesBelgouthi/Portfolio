@@ -1,9 +1,14 @@
 import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faGlobe } from "@fortawesome/free-solid-svg-icons";
+import { useTranslation } from "react-i18next";
+import i18next from "i18next";
+
 import Menu from "./Menu";
 
 const Header = () => {
+  const { t } = useTranslation();
+
   const [isOpen, setIsOpen] = useState(false);
   const [selectedLanguage, setSelectedLanguage] = useState("en");
 
@@ -16,6 +21,7 @@ const Header = () => {
   const handleLanguageChange = (language) => {
     setSelectedLanguage(language);
     setIsOpen(false);
+    i18next.changeLanguage(language);
   };
 
   const toggleMenu = () => {
@@ -28,22 +34,22 @@ const Header = () => {
         <nav className="header--nav">
           <ul>
             <li>
-              <a href="#home-section">Home</a>
+              <a href="#home-section">{t("header.1")}</a>
             </li>
             <li>
-              <a>About</a>
+              <a>{t("header.2")}</a>
             </li>
             <li>
-              <a>Expertise</a>
+              <a>{t("header.3")}</a>
             </li>
             <li>
-              <a>Career</a>
+              <a>{t("header.4")}</a>
             </li>
             <li>
-              <a>Projects</a>
+              <a>{t("header.5")}</a>
             </li>
             <li>
-              <a>Contact</a>
+              <a>{t("header.6")}</a>
             </li>
           </ul>
         </nav>

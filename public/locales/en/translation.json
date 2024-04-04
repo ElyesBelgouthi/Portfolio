@@ -1,4 +1,12 @@
 {
+  "header": {
+    "1": "Home",
+    "2": "About",
+    "3": "Expertise",
+    "4": "Experience",
+    "5": "Projects",
+    "6": "Contact"
+  },
   "homeSection": {
     "h4": "Hi! I am",
     "h2": "Software Engineering Student & FullStack Developer",
@@ -21,5 +29,14 @@
     "12": " for dynamic particle effects, and ",
     "13": " for internationalization support.",
     "14": "Let's connect and explore how we can innovate together!"
+  },
+  "expertiseSection": {
+    "title": "Expertise",
+    "1": "Programming Languages",
+    "2": "Frontend Development",
+    "3": "Backend Frameworks",
+    "4": "APIs & Databases",
+    "5": "Version Control",
+    "6": "Data Analysis & Visualization"
   }
 }

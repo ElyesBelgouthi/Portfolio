@@ -17,7 +17,7 @@ i18n
     supportedLngs: ["en", "fr"],
     fallbackLng: "en",
     detection: {
-      order: ["cookie", "localStorage", "navigator", "htmlTag", "path"],
+      order: ["htmlTag", "cookie", "localStorage", "navigator", "path"],
       caches: ["cookie"],
       lookupCookie: "i18next",
     },

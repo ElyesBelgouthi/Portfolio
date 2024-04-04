@@ -1,10 +1,14 @@
+import { useTranslation } from "react-i18next";
+
 const ExpertiseSection = () => {
+  const { t } = useTranslation();
+
   return (
     <section id="expertise-section">
-      <h1 className="expertise-title">Expertise</h1>
+      <h1 className="expertise-title">{t("expertiseSection.title")}</h1>
       <div className="expertise-categories">
         <div className="expertise-category">
-          <h3>Programming Languages</h3>
+          <h3>{t("expertiseSection.1")}</h3>
           <ul>
             <li>
               <img
@@ -52,7 +56,7 @@ const ExpertiseSection = () => {
           </ul>
         </div>
         <div className="expertise-category">
-          <h3>Web Development</h3>
+          <h3>{t("expertiseSection.2")}</h3>
           <ul>
             <li>
               <img
@@ -87,7 +91,7 @@ const ExpertiseSection = () => {
           </ul>
         </div>
         <div className="expertise-category">
-          <h3>Backend Frameworks</h3>
+          <h3>{t("expertiseSection.3")}</h3>
           <ul>
             <li>
               <img
@@ -119,7 +123,7 @@ const ExpertiseSection = () => {
           </ul>
         </div>
         <div className="expertise-category">
-          <h3>APIs & Databases</h3>
+          <h3>{t("expertiseSection.4")}</h3>
           <ul>
             <li>
               <img
@@ -154,7 +158,7 @@ const ExpertiseSection = () => {
           </ul>
         </div>
         <div className="expertise-category">
-          <h3>Version Control</h3>
+          <h3>{t("expertiseSection.5")}</h3>
           <ul>
             <li>
               <img
@@ -171,7 +175,7 @@ const ExpertiseSection = () => {
           </ul>
         </div>
         <div className="expertise-category">
-          <h3>Data Analysis & Visualization</h3>
+          <h3>{t("expertiseSection.6")}</h3>
           <ul>
             <li>
               <img
