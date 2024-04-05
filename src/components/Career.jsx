@@ -7,12 +7,12 @@ const CareerSection = () => {
     <section id="career-section">
       <div className="career-subsection">
         <h1 className="career-title">{t("educationSection.title")}</h1>
-        <div class="career-container">
-          <div class="timeline">
+        <div className="career-container">
+          <div className="timeline">
             <ul className="time-line-list">
               <li className="time-line-list-element">
-                <div class="timeline-content">
-                  <h3 class="date">{t("educationSection.1")}</h3>
+                <div className="timeline-content">
+                  <h3 className="date">{t("educationSection.1")}</h3>
                   <h2>{t("educationSection.2")}</h2>
                   <h1>{t("educationSection.3")}</h1>
                   <ul>
@@ -29,8 +29,8 @@ const CareerSection = () => {
                 </div>
               </li>
               <li className="time-line-list-element">
-                <div class="timeline-content">
-                  <h3 class="date">{t("educationSection.7")}</h3>
+                <div className="timeline-content">
+                  <h3 className="date">{t("educationSection.7")}</h3>
                   <h2> {t("educationSection.8")} </h2>
                   <h1>{t("educationSection.9")}</h1>
 
@@ -47,12 +47,12 @@ const CareerSection = () => {
       </div>
       <div className="career-subsection">
         <h1 className="career-title">{t("professionalSection.title")}</h1>
-        <div class="career-container">
-          <div class="timeline">
+        <div className="career-container">
+          <div className="timeline">
             <ul className="time-line-list">
               <li className="time-line-list-element">
-                <div class="timeline-content">
-                  <h3 class="date">{t("professionalSection.1")}</h3>
+                <div className="timeline-content">
+                  <h3 className="date">{t("professionalSection.1")}</h3>
                   <h2>{t("professionalSection.2")}</h2>
                   <h1>{t("professionalSection.3")}</h1>
 
@@ -64,8 +64,8 @@ const CareerSection = () => {
                 </div>
               </li>
               <li className="time-line-list-element">
-                <div class="timeline-content">
-                  <h3 class="date">{t("professionalSection.7")}</h3>
+                <div className="timeline-content">
+                  <h3 className="date">{t("professionalSection.7")}</h3>
                   <h2>{t("professionalSection.8")}</h2>
                   <h1>{t("professionalSection.9")}</h1>
 

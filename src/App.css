@@ -842,3 +842,115 @@ b {
     background-color: aqua;
   }
 }
+
+/*
+  PROJECTS SECTION 
+*/
+
+#project-section {
+  display: block;
+  min-height: calc(100vh - 70px);
+  padding: 50px 90px;
+  width: 100%;
+  margin-bottom: 80px;
+}
+
+.project-title {
+  margin: 0 auto;
+  font-size: 3rem;
+  font-weight: 800;
+  color: #a7dbd8;
+  --b: 8px;
+  --g: repeating-linear-gradient(
+    45deg,
+    #2f0c97 0 10px,
+    #0a7c8d 0 20px,
+    #ffffff 0 30px
+  );
+  border-image: var(--g) fill 0 / calc(100% - var(--b)) 0 0/0 25vw 0 25vw repeat;
+  padding-block: 20px;
+  margin-bottom: 30px;
+  max-width: 600px;
+}
+
+.carousel-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel {
+  overflow: hidden;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.inner {
+  white-space: nowrap;
+  transition: transform 0.3s;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.carousel-item {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 490px;
+}
+
+.carousel-item-text {
+  font-size: 1.15rem;
+  margin: 40px 0 40px 0;
+  padding: 0 20px 0 20px;
+  white-space: normal;
+  color: #617d98;
+}
+.carousel-img {
+  width: 250px;
+  padding: 0 20px 0 20px;
+}
+
+.carousel-buttons {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.button-arrow {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #a7dbd8;
+  margin-top: 20px;
+}
+
+.indicators {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.indicator-buttons {
+  border: none;
+  cursor: pointer;
+}
+
+.indicators > button {
+  margin: 5px;
+  background: none;
+}
+
+.indicator-symbol {
+  color: #26343f;
+}
+
+.indicator-symbol-active {
+  color: #ffffff;
+}
+
+.material-symbols-outlined {
+  font-size: 40px;
+}

@@ -1,7 +1,8 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import profile from "../assets/profile.png";
 import { faDownload } from "@fortawesome/free-solid-svg-icons";
 import { useTranslation } from "react-i18next";
+
+import profile from "../assets/profile.png";
 
 const HomeSection = () => {
   const { t } = useTranslation();
@@ -22,11 +23,11 @@ const HomeSection = () => {
           <img src={profile} alt="profile--image" />
         </div>
       </div>
-      <div class="scroll-wrapper">
-        <div class="scroll-box">
-          <div class="scroll-circle"></div>
+      <div className="scroll-wrapper">
+        <div className="scroll-box">
+          <div className="scroll-circle"></div>
         </div>
-        <div class="scroll-text">{t("homeSection.scrollDown")}</div>
+        <div className="scroll-text">{t("homeSection.scrollDown")}</div>
       </div>
     </section>
   );
