@@ -1,25 +1,11 @@
 import { useTranslation } from "react-i18next";
-import { motion, useScroll, useTransform } from "framer-motion";
-import { useRef } from "react";
+import { motion } from "framer-motion";
 
 const ExpertiseSection = () => {
   const { t } = useTranslation();
-  const ref = useRef(null);
-
-  const { scrollYProgress } = useScroll({
-    target: ref,
-    offset: ["0 1", "1.1 1.22"],
-  });
-
-  const scaleProgress = useTransform(scrollYProgress, [0, 1], [0, 1]);
 
   return (
-    <motion.div
-      ref={ref}
-      style={{
-        opacity: scaleProgress,
-      }}
-    >
+    <motion.div>
       <section id="expertise-section">
         <h1 className="expertise-title">{t("expertiseSection.title")}</h1>
         <div className="expertise-categories">
