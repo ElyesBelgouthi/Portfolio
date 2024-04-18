@@ -22,7 +22,7 @@ i18n
       lookupCookie: "i18next",
     },
     backend: {
-      loadPath: "/locales/{{lng}}/translation.json",
+      loadPath: "/Portfolio/locales/{{lng}}/translation.json",
     },
     react: { useSuspense: false },
   });
