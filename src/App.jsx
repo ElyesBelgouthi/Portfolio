@@ -1,5 +1,3 @@
-import { useState } from "react";
-
 import "./App.css";
 import Header from "./components/Header";
 import Layout from "./components/Layout";
@@ -19,11 +17,8 @@ function App() {
       <HomeSection />
       <AboutSection />
       <ExpertiseSection />
-      <section id="career-section">
-        <EducationSection />
-        <CareerSection />
-      </section>
-
+      <EducationSection />
+      <CareerSection />
       <ProjectsSection />
       <ContactSection />
     </>

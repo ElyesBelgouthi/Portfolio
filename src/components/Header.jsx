@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faGlobe } from "@fortawesome/free-solid-svg-icons";
 import { useTranslation } from "react-i18next";
 import i18next from "i18next";
-import { motion } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 import { Link } from "react-scroll";
 
 import Menu from "./Menu";
@@ -70,7 +70,7 @@ const Header = () => {
                 to="home-section"
                 spy={true}
                 smooth={true}
-                offset={50}
+                offset={0}
                 duration={500}
               >
                 {t("header.1")}
@@ -78,23 +78,58 @@ const Header = () => {
             </motion.li>
             <motion.li variants={hoverElements} whileHover="hover">
               <Link
-                to="about-section"
+                to="about"
                 spy={true}
                 smooth={true}
-                offset={-50}
+                offset={0}
                 duration={500}
               >
                 {t("header.2")}
               </Link>
             </motion.li>
             <motion.li variants={hoverElements} whileHover="hover">
-              <a>{t("header.3")}</a>
+              <Link
+                to="expertise-section"
+                spy={true}
+                smooth={true}
+                offset={0}
+                duration={500}
+              >
+                {t("header.3")}
+              </Link>
             </motion.li>
             <motion.li variants={hoverElements} whileHover="hover">
-              <a>{t("header.4")}</a>
+              <Link
+                to="education"
+                spy={true}
+                smooth={true}
+                offset={0}
+                duration={500}
+              >
+                {t("header.6")}
+              </Link>
             </motion.li>
             <motion.li variants={hoverElements} whileHover="hover">
-              <a>{t("header.5")}</a>
+              <Link
+                to="career-section"
+                spy={true}
+                smooth={true}
+                offset={0}
+                duration={500}
+              >
+                {t("header.4")}
+              </Link>
+            </motion.li>
+            <motion.li variants={hoverElements} whileHover="hover">
+              <Link
+                to="project"
+                spy={true}
+                smooth={true}
+                offset={0}
+                duration={500}
+              >
+                {t("header.5")}
+              </Link>
             </motion.li>
           </ul>
         </nav>
@@ -135,7 +170,9 @@ const Header = () => {
           </div>
         )}
       </motion.header>
-      {isMenuOpen && <Menu onClick={setIsMenuOpen} />}
+      <AnimatePresence>
+        {isMenuOpen && <Menu key="menu" onClick={setIsMenuOpen} />}
+      </AnimatePresence>
     </>
   );
 };

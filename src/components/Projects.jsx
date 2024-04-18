@@ -13,20 +13,22 @@ const ProjectsSection = () => {
   const scaleProgress = useTransform(scrollYProgress, [0, 1], [0.6, 1]);
 
   return (
-    <motion.div
-      ref={ref}
-      style={{
-        scale: scaleProgress,
-        opacity: scaleProgress,
-      }}
-    >
-      <section id="project-section">
-        <h1 className="project-title">Projects</h1>
-        <div className="carousel-container">
-          <Carousel />
+    <div id="project">
+      <motion.div
+        ref={ref}
+        style={{
+          scale: scaleProgress,
+          opacity: scaleProgress,
+        }}
+      >
+        <div id="project-section">
+          <h1 className="project-title">Projects</h1>
+          <div className="carousel-container">
+            <Carousel />
+          </div>
         </div>
-      </section>
-    </motion.div>
+      </motion.div>
+    </div>
   );
 };
 
