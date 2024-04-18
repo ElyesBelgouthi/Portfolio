@@ -9,6 +9,7 @@ import ExpertiseSection from "./components/Expertise";
 import CareerSection from "./components/Career";
 import ProjectsSection from "./components/Projects";
 import ContactSection from "./components/Contact";
+import EducationSection from "./components/Education";
 
 function App() {
   return (
@@ -18,7 +19,11 @@ function App() {
       <HomeSection />
       <AboutSection />
       <ExpertiseSection />
-      <CareerSection />
+      <section id="career-section">
+        <EducationSection />
+        <CareerSection />
+      </section>
+
       <ProjectsSection />
       <ContactSection />
     </>

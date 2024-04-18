@@ -11,13 +11,12 @@ const ExpertiseSection = () => {
     offset: ["0 1", "1.1 1.22"],
   });
 
-  const scaleProgress = useTransform(scrollYProgress, [0, 1], [0.8, 1]);
+  const scaleProgress = useTransform(scrollYProgress, [0, 1], [0, 1]);
 
   return (
     <motion.div
       ref={ref}
       style={{
-        scale: scaleProgress,
         opacity: scaleProgress,
       }}
     >
