@@ -72,5 +72,16 @@
     "11": "Utilisation d'Angular pour créer une interface conviviale et réactive.",
     "12": "Implémentation du back-end en utilisant NestJS pour assurer le développement d'API et la gestion des données.",
     "13": "Conception et maintenance de la base de données en utilisant PostgreSQL."
+  },
+  "projectsSection": {
+    "0": {
+      "description": "Dirigé une équipe de quatre membres dans le développement d'une plateforme de dons pour la Palestine en utilisant React, Framer Motion, ASP.NET Core et MS SQL. Intégration d'un traitement sécurisé des paiements via Stripe pour offrir une expérience utilisateur fluide et une gestion efficace des dons."
+    },
+    "1": {
+      "description": "Conçu de manière autonome un site web commercial pour un artisan menuisier, en utilisant Angular, NestJS et PostgreSQL. Garanti une expérience utilisateur optimale grâce à un design adaptatif réalisé avec Tailwind CSS. Hébergé sur railway.app avec une intégration continue."
+    },
+    "2": {
+      "description": "Développé un système ERP pour une plateforme de gestion de l'apprentissage (LMS), en utilisant Angular pour le front-end et NestJS pour le back-end, avec PostgreSQL comme base de données. Piloté l'ensemble du projet en solo, assurant une mise en œuvre réussie."
+    }
   }
 }

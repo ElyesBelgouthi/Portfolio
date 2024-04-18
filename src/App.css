@@ -1,6 +1,7 @@
 #root {
   margin: 0 auto;
   text-align: center;
+  scroll-behavior: smooth;
 }
 
 #tsparticles {
@@ -47,6 +48,9 @@ section {
   flex-direction: row;
   gap: 15px;
   font-size: 15px;
+  background-color: #101522bd;
+  padding: 8px 20px;
+  border-radius: 50px;
 }
 
 .language-selector {
@@ -146,7 +150,7 @@ section {
     right: 0;
     color: #fff;
     font-size: 20px;
-    background-color: rgba(29, 24, 63, 0.5);
+    background-color: rgba(29, 24, 63, 0.874);
     z-index: 98;
   }
 
@@ -878,11 +882,12 @@ b {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 80%;
 }
 
 .carousel {
   overflow: hidden;
-  width: 80%;
+  width: 90%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -896,21 +901,49 @@ b {
 
 .carousel-item {
   display: inline-flex;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
-  height: 490px;
+  gap: 40px;
+  height: 60vh;
+  text-align: left;
 }
 
-.carousel-item-text {
-  font-size: 1.15rem;
-  margin: 40px 0 40px 0;
-  padding: 0 20px 0 20px;
+.carousel-item-text p {
+  font-weight: 300;
+  font-size: 1rem;
+  margin-bottom: 20px;
+
   white-space: normal;
-  color: #617d98;
+  color: #fff;
 }
+
+.carousel-item-text h2 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  white-space: normal;
+  color: #a7dbd8;
+}
+
+.carousel-item-links {
+  font-weight: 300;
+  font-size: 1rem;
+  font-weight: 500;
+  white-space: normal;
+  color: #a7dbd8;
+}
+
 .carousel-img {
-  width: 250px;
-  padding: 0 20px 0 20px;
+  width: 100%;
+  height: 80%;
+  padding: 0 10px;
+}
+
+.carousel-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 .carousel-buttons {
@@ -953,4 +986,145 @@ b {
 
 .material-symbols-outlined {
   font-size: 40px;
+}
+
+@media only screen and (max-width: 1080px) {
+  #project-section {
+    display: block;
+    min-height: calc(100vh - 70px);
+    padding: 0;
+    width: 100%;
+    margin-bottom: 80px;
+  }
+
+  .project-title {
+    margin: 0 auto;
+    font-size: 2rem;
+    font-weight: 800;
+    color: #a7dbd8;
+    --b: 8px;
+    --g: repeating-linear-gradient(
+      45deg,
+      #2f0c97 0 10px,
+      #0a7c8d 0 20px,
+      #ffffff 0 30px
+    );
+    border-image: var(--g) fill 0 / calc(100% - var(--b)) 0 0/0 15vw 0 15vw
+      repeat;
+    padding-block: 20px;
+    margin-bottom: 30px;
+    max-width: 200px;
+  }
+
+  .carousel-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+
+  .carousel {
+    overflow: hidden;
+    width: 90%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  .inner {
+    height: 70%;
+    white-space: nowrap;
+    transition: transform 0.3s;
+  }
+
+  .carousel-item {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    height: 100%;
+    width: 100%;
+    padding: 0 20px;
+    text-align: left;
+  }
+
+  .carousel-item-text p {
+    font-weight: 300;
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+
+    white-space: normal;
+    color: #fff;
+  }
+
+  .carousel-item-text h2 {
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    white-space: normal;
+    color: #a7dbd8;
+  }
+
+  .carousel-item-links {
+    font-weight: 300;
+    font-size: 0.8rem;
+    font-weight: 500;
+    white-space: normal;
+    color: #a7dbd8;
+  }
+
+  .carousel-img {
+    width: 100%;
+    height: 80%;
+    height: 300px;
+    padding: 0 10px;
+  }
+
+  .button-arrow {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #a7dbd8;
+  }
+}
+
+/*
+  CONTACT FOOTER
+*/
+
+#contact-section {
+  position: fixed;
+  bottom: 20px;
+  right: 80px;
+  z-index: 99;
+}
+
+.contact-links {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin-top: 20px;
+}
+
+.contact-links a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  font-size: 30px;
+  color: #a7dbd8;
+  padding: 10px 10px;
+  transition: all 0.3s ease;
+}
+
+.contact-links a:hover,
+.contact-links a:focus {
+  background-color: #ddd;
+  color: #111;
+
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
 }

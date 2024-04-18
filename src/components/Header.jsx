@@ -3,8 +3,34 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faGlobe } from "@fortawesome/free-solid-svg-icons";
 import { useTranslation } from "react-i18next";
 import i18next from "i18next";
+import { motion } from "framer-motion";
 
 import Menu from "./Menu";
+
+const navElements = {
+  hidden: {
+    y: -250,
+  },
+  visible: {
+    y: 0,
+    transition: {
+      delay: 0.2,
+      type: "spring",
+      stiffness: 120,
+    },
+  },
+};
+
+const hoverElements = {
+  hover: {
+    scale: 1.2,
+    transition: {
+      duration: 0.2,
+      type: "spring",
+      stiffness: 300,
+    },
+  },
+};
 
 const Header = () => {
   const { t } = useTranslation();
@@ -30,27 +56,29 @@ const Header = () => {
 
   return (
     <>
-      <header className="header">
+      <motion.header
+        className="header"
+        variants={navElements}
+        initial="hidden"
+        animate="visible"
+      >
         <nav className="header--nav">
           <ul>
-            <li>
+            <motion.li variants={hoverElements} whileHover="hover">
               <a href="#home-section">{t("header.1")}</a>
-            </li>
-            <li>
+            </motion.li>
+            <motion.li variants={hoverElements} whileHover="hover">
               <a>{t("header.2")}</a>
-            </li>
-            <li>
+            </motion.li>
+            <motion.li variants={hoverElements} whileHover="hover">
               <a>{t("header.3")}</a>
-            </li>
-            <li>
+            </motion.li>
+            <motion.li variants={hoverElements} whileHover="hover">
               <a>{t("header.4")}</a>
-            </li>
-            <li>
+            </motion.li>
+            <motion.li variants={hoverElements} whileHover="hover">
               <a>{t("header.5")}</a>
-            </li>
-            <li>
-              <a>{t("header.6")}</a>
-            </li>
+            </motion.li>
           </ul>
         </nav>
         <div className="language-selector">
@@ -89,7 +117,7 @@ const Header = () => {
             <FontAwesomeIcon icon={faBars} />
           </div>
         )}
-      </header>
+      </motion.header>
       {isMenuOpen && <Menu onClick={setIsMenuOpen} />}
     </>
   );

@@ -1,8 +1,10 @@
 import { faX } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { useState } from "react";
+import { useTranslation } from "react-i18next";
 
 const Menu = (props) => {
+  const { t } = useTranslation();
+
   const closeMenu = () => {
     props.onClick(false);
   };
@@ -13,23 +15,22 @@ const Menu = (props) => {
         <FontAwesomeIcon icon={faX} />
       </div>
       <ul>
-        <li onClick={closeMenu}>
-          <a>Home</a>
+        <li>
+          <a href="#home-section" onClick={closeMenu}>
+            {t("header.1")}
+          </a>
         </li>
-        <li onClick={closeMenu}>
-          <a>About</a>
+        <li>
+          <a onClick={closeMenu}>{t("header.2")}</a>
         </li>
-        <li onClick={closeMenu}>
-          <a>Expertise</a>
+        <li>
+          <a onClick={closeMenu}>{t("header.3")}</a>
         </li>
-        <li onClick={closeMenu}>
-          <a>Career</a>
+        <li>
+          <a onClick={closeMenu}> {t("header.4")}</a>
         </li>
-        <li onClick={closeMenu}>
-          <a>Projects</a>
-        </li>
-        <li onClick={closeMenu}>
-          <a>Contact</a>
+        <li>
+          <a onClick={closeMenu}>{t("header.5")}</a>
         </li>
       </ul>
     </div>

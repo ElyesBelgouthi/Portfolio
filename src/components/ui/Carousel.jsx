@@ -5,6 +5,7 @@ import {
   faChevronRight,
   faCircle,
 } from "@fortawesome/free-solid-svg-icons";
+import { useTranslation } from "react-i18next";
 
 import CarouselItem from "./CarouselItem";
 import project1 from "../../assets/project1.png";
@@ -12,25 +13,29 @@ import project2 from "../../assets/project2.png";
 import project3 from "../../assets/project3.png";
 
 const Carousel = () => {
+  const { t } = useTranslation();
   const [activeIndex, setActiveIndex] = useState(0);
   const items = [
     {
-      title: "Baseball",
-      description:
-        "Baseball is a bat-and-ball sport played between two teams of nine players each, taking turns batting and fielding. The game occurs over the course of several plays, with each play generally beginning when a player on the fielding team, called the pitcher.",
+      title: "Save Palestine (2024)",
       icon: project2,
+      linkToFront: "https://github.com/ElyesBelgouthi/SavePalestine-FrontEnd",
+      linkToBack: "https://github.com/ElyesBelgouthi/SavePalestine-BackEnd",
     },
+
     {
-      title: "Walking",
-      description:
-        "Walking (also known as ambulation) is one of the main gaits of terrestrial locomotion among legged animals. Walking is typically slower than running and other gaits. ",
+      title: "Meuble FH (2023)",
+
       icon: project1,
+      linkToFront: "https://github.com/ElyesBelgouthi/Meuble-FH",
+      linkToBack: "https://github.com/ElyesBelgouthi/Meuble-FH-backend",
     },
     {
-      title: "Weights",
-      description:
-        "Weightlifting generally refers to activities in which people lift weights, often in the form of dumbbells or barbells. People lift various kinds of weights for a variety of different reasons.",
+      title: " Horizon Data Academy ERP (2023)",
+
       icon: project3,
+      linkToFront: "https://github.com/ElyesBelgouthi/Training-Center-front",
+      linkToBack: "https://github.com/ElyesBelgouthi/Training-Center-back",
     },
   ];
   const updateIndex = (newIndex) => {
@@ -49,7 +54,14 @@ const Carousel = () => {
         style={{ transform: `translate(-${activeIndex * 100}%)` }}
       >
         {items.map((item, index) => {
-          return <CarouselItem item={item} width={"100%"} key={index} />;
+          return (
+            <CarouselItem
+              item={item}
+              description={t(`projectsSection.${index}.description`)}
+              width={"100%"}
+              key={index}
+            />
+          );
         })}
       </div>
 
