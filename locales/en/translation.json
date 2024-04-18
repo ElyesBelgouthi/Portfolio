@@ -1,0 +1,86 @@
+{
+  "header": {
+    "1": "Home",
+    "2": "About",
+    "3": "Expertise",
+    "4": "Experience",
+    "5": "Projects",
+    "6": "Education"
+  },
+  "homeSection": {
+    "h4": "Hi! I am",
+    "h2": "Software Engineering Student & FullStack Developer",
+    "resume": "My Resume",
+    "scrollDown": "Scroll down"
+  },
+  "aboutSection": {
+    "title": "About Me",
+    "1": "Hello! I'm ",
+    "2": ", a third-year software engineering student ",
+    "3": " at ",
+    "4": " in Tunis, Tunisia. I'm passionate about technology and eager for opportunities like ",
+    "5": "internships",
+    "6": "and ",
+    "7": "part-time",
+    "8": " positions to apply my skills and contribute to meaningful projects.",
+    "9": "This website was crafted using cutting-edge technologies including",
+    "10": " for the frontend, ",
+    "11": " for animations,",
+    "12": " for dynamic particle effects, and ",
+    "13": " for internationalization support.",
+    "14": "Let's connect and explore how we can innovate together!"
+  },
+  "expertiseSection": {
+    "title": "Expertise",
+    "1": "Programming Languages",
+    "2": "Frontend Development",
+    "3": "Backend Frameworks",
+    "4": "APIs & Databases",
+    "5": "Version Control",
+    "6": "Data Analysis & Visualization"
+  },
+  "educationSection": {
+    "title": "Education",
+    "1": "June 2021",
+    "2": " Pioneer High School of Ariana | Ariana, Tunisia ",
+    "3": " Tunisian Baccalaureate in Technical Sciences",
+    "4": "Achievements:",
+    "5": "Grade: ",
+    "6": " (Ranked ",
+    "66": "8th",
+    "666": " in National Examination)",
+    "7": "Expected June 2026",
+    "8": " National Institute of Applied Sciences and Technology (INSAT) | Tunis, Tunisia",
+    "9": "Bachelor of Software Engineering ",
+    "10": "Achievements: ",
+    "11": "Second Year: Ranked 8th out of 85 students",
+    "12": "Freshman Year: Achieved a remarkable 6th out of 450."
+  },
+  "professionalSection": {
+    "title": "Professional Experience",
+    "1": " July 2022 - August 2022",
+    "2": " Tunisie Autoroutes | Tunis, Tunisia ",
+    "3": " Seasonal IT Technician",
+    "4": "Resolved Network Issues using tools like Putty, ensuring connectivity.",
+    "5": "Provided technical support to end-users, addressing their IT-related queries.",
+    "6": "Resolved motorway toll payment system related errors using MS SQL.",
+    "7": "July 2023 - August 2023",
+    "8": " Horizon Data | Tunis, Tunisia ",
+    "9": " Intern / Full-Stack Developer",
+    "10": "Developed an ERP system for a Learning Management System (LMS).",
+    "11": "Utilized Angular to create a user-friendly and responsive interface.",
+    "12": "Implemented the back-end using NestJS to ensure API development and data management.",
+    "13": "Designed and maintained the database using PostgreSQL."
+  },
+  "projectsSection": {
+    "0": {
+      "description": "Led a team of four to develop a donation platform for Palestine using React, Framer Motion, ASP.NET Core, and MS SQL. Integrated secure payment processing via Stripe for seamless user experience and efficient donation management."
+    },
+    "1": {
+      "description": "Independently crafted a commercial website for a carpenter, employing Angular, NestJS, and PostgreSQL. Ensured seamless user experience with responsive design via Tailwind CSS, hosted on railway.app with continuous integration."
+    },
+    "2": {
+      "description": "Developed an ERP system for an LMS, utilizing Angular for the frontend and NestJS for the backend with PostgreSQL for the database. Led the entire project solo, ensuring successful implementation."
+    }
+  }
+}
