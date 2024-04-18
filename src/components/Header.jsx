@@ -4,6 +4,7 @@ import { faBars, faGlobe } from "@fortawesome/free-solid-svg-icons";
 import { useTranslation } from "react-i18next";
 import i18next from "i18next";
 import { motion } from "framer-motion";
+import { Link } from "react-scroll";
 
 import Menu from "./Menu";
 
@@ -65,10 +66,26 @@ const Header = () => {
         <nav className="header--nav">
           <ul>
             <motion.li variants={hoverElements} whileHover="hover">
-              <a href="#home-section">{t("header.1")}</a>
+              <Link
+                to="home-section"
+                spy={true}
+                smooth={true}
+                offset={50}
+                duration={500}
+              >
+                {t("header.1")}
+              </Link>
             </motion.li>
             <motion.li variants={hoverElements} whileHover="hover">
-              <a>{t("header.2")}</a>
+              <Link
+                to="about-section"
+                spy={true}
+                smooth={true}
+                offset={-50}
+                duration={500}
+              >
+                {t("header.2")}
+              </Link>
             </motion.li>
             <motion.li variants={hoverElements} whileHover="hover">
               <a>{t("header.3")}</a>
