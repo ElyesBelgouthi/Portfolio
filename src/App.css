@@ -1124,3 +1124,17 @@ b {
 
   box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
 }
+
+@media only screen and (max-width: 1080px) {
+  #contact-section {
+    position: inherit;
+    width: 100%;
+  }
+
+  .contact-links {
+    display: flex;
+    justify-content: center;
+    margin: 40px 0;
+    gap: 30px;
+  }
+}
