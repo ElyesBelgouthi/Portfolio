@@ -4,7 +4,8 @@ import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
 
 import profile from "../assets/profile.png";
-import resume from "../assets/CV.pdf";
+import resumeEn from "../assets/CV.pdf";
+import resumeFr from "../assets/CVFr.pdf";
 
 const containerVariants = {
   hidden: {
@@ -38,7 +39,9 @@ const firstChildVariants = {
 };
 
 const HomeSection = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+  const resumeLink = i18n.language === "fr" ? resumeFr : resumeEn;
+  const resumeName = i18n.language === "fr" ? "Cv" : "resume";
 
   return (
     <motion.section
@@ -57,7 +60,7 @@ const HomeSection = () => {
           <motion.h2 variants={firstChildVariants}>
             {t("homeSection.h2")}
           </motion.h2>
-          <a href={resume} download="resume" target="_blank">
+          <a href={resumeLink} download={resumeName} target="_blank">
             <motion.button
               variants={firstChildVariants}
               className="home--button"
