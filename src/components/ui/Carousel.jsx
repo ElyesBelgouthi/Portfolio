@@ -17,7 +17,7 @@ const Carousel = () => {
   const [activeIndex, setActiveIndex] = useState(0);
   const items = [
     {
-      title: "Save Palestine (2024)",
+      title: "Donate Now (2024)",
       icon: project2,
       linkToFront: "https://github.com/ElyesBelgouthi/SavePalestine-FrontEnd",
       linkToBack: "https://github.com/ElyesBelgouthi/SavePalestine-BackEnd",
