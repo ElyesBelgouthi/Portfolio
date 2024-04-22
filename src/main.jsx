@@ -17,12 +17,12 @@ i18n
     supportedLngs: ["en", "fr"],
     fallbackLng: "en",
     detection: {
-      order: ["htmlTag", "cookie", "localStorage", "navigator", "path"],
+      order: ["navigator", "htmlTag", "cookie", "localStorage", "path"],
       caches: ["cookie"],
       lookupCookie: "i18next",
     },
     backend: {
-      loadPath: "/Portfolio/locales/{{lng}}/translation.json",
+      loadPath: "/locales/{{lng}}/translation.json",
     },
     react: { useSuspense: false },
   });

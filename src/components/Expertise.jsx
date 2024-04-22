@@ -93,6 +93,17 @@ const ExpertiseSection = () => {
             </ul>
           </div>
           <div className="expertise-category">
+            <h3>{t("expertiseSection.7")}</h3>
+            <ul>
+              <li>
+                <img
+                  src="https://storage.googleapis.com/cms-storage-bucket/683514c5660dbe52f5ba.png"
+                  alt="Flutter"
+                />
+              </li>
+            </ul>
+          </div>
+          <div className="expertise-category">
             <h3>{t("expertiseSection.3")}</h3>
             <ul>
               <li>
@@ -124,6 +135,7 @@ const ExpertiseSection = () => {
               </li>
             </ul>
           </div>
+
           <div className="expertise-category">
             <h3>{t("expertiseSection.4")}</h3>
             <ul>
@@ -172,41 +184,6 @@ const ExpertiseSection = () => {
                 <img
                   src="https://cdn.worldvectorlogo.com/logos/github-icon-2.svg"
                   alt="GitHub"
-                />
-              </li>
-            </ul>
-          </div>
-          <div className="expertise-category">
-            <h3>{t("expertiseSection.6")}</h3>
-            <ul>
-              <li>
-                <img
-                  src="https://seeklogo.com/images/P/pandas-logo-776F6D45BB-seeklogo.com.png"
-                  alt="Pandas"
-                />
-              </li>
-              <li>
-                <img
-                  src="https://user-images.githubusercontent.com/50221806/86498201-a8bd8680-bd39-11ea-9d08-66b610a8dc01.png"
-                  alt="NumPy"
-                />
-              </li>
-              <li>
-                <img
-                  src="https://image.pngaaa.com/242/4152242-middle.png"
-                  alt="Matplotlib"
-                />
-              </li>
-              <li>
-                <img
-                  src="https://seaborn.pydata.org/_images/logo-tall-lightbg.svg"
-                  alt="Seaborn"
-                />
-              </li>
-              <li>
-                <img
-                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Scikit_learn_logo_small.svg/2560px-Scikit_learn_logo_small.svg.png"
-                  alt="Scikit_learn"
                 />
               </li>
             </ul>

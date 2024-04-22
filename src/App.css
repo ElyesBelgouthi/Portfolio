@@ -540,6 +540,7 @@ b {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  align-content: center;
   gap: 15px;
   padding: 0;
 }
@@ -561,19 +562,23 @@ b {
 }
 
 .expertise-category:nth-child(2) {
-  grid-row-end: span 2;
+  grid-row-end: span 3;
 }
 
 .expertise-category:nth-child(3) {
-  grid-row-end: span 2;
+  grid-column-end: span 1;
 }
 
 .expertise-category:nth-child(4) {
   grid-column-end: span 2;
 }
 
-.expertise-category:nth-child(6) {
+.expertise-category:nth-child(5) {
   grid-column-end: span 2;
+}
+
+.expertise-category:nth-child(6) {
+  grid-column-end: span 1;
 }
 
 @media screen and (max-width: 850px) {
