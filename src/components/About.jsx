@@ -50,7 +50,6 @@ const AboutSection = () => {
               <b>i18next</b> {t("aboutSection.13")}{" "}
               <FontAwesomeIcon icon={faQuoteRight} className="quote--icon" />
             </p>
-            <h2>{t("aboutSection.14")}</h2>
           </div>
           <div className="about--image">
             <img src={insat} alt="Insat--logo" />
