@@ -34,7 +34,7 @@ const hoverElements = {
 };
 
 const Header = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
 
   const [isOpen, setIsOpen] = useState(false);
   const [selectedLanguage, setSelectedLanguage] = useState("en");
@@ -140,9 +140,9 @@ const Header = () => {
           >
             <div className="custom-dropdown-toggle">
               <FontAwesomeIcon icon={faGlobe} />
-              {selectedLanguage === "en"
+              {i18n.language === "en"
                 ? "English"
-                : selectedLanguage === "fr"
+                : i18n.language === "fr"
                 ? "Français"
                 : "Select Language"}
               <span className="arrow-icon">&#9660;</span>
